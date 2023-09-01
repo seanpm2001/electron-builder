@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "7.15.4",
-    "@changesets/changelog-github": "0.4.7",
+    "@changesets/changelog-github": "0.4.8",
     "@changesets/cli": "2.25.0",
     "@types/node": "16.11.43",
     "@typescript-eslint/eslint-plugin": "5.41.0",
