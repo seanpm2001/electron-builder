@@ -66,8 +66,8 @@ importers:
         specifier: 27.5.1
         version: 27.5.1
       jsdoc-to-markdown:
-        specifier: 7.0.1
-        version: 7.0.1
+        specifier: 7.1.1
+        version: 7.1.1
       lint-staged:
         specifier: 11.1.2
         version: 11.1.2
@@ -3120,7 +3120,7 @@ packages:
   /@vue/compiler-core@3.2.47:
     resolution: {integrity: sha512-p4D7FDnQb7+YJmO2iPEv0SQNeNzcbHdGByJDsT4lynf63AFkOTFN07HsiRSvjGo0QrxR/o3d0hUyNCUnBU2Tig==}
     dependencies:
-      '@babel/parser': 7.16.4
+      '@babel/parser': 7.21.3
       '@vue/shared': 3.2.47
       estree-walker: 2.0.2
       source-map: 0.6.1
@@ -3158,7 +3158,7 @@ packages:
   /@vue/reactivity-transform@3.2.47:
     resolution: {integrity: sha512-m8lGXw8rdnPVVIdIFhf0LeQ/ixyHkH5plYuS83yop5n7ggVJU+z5v0zecwEnX7fa7HNLBhh2qngJJkxpwEEmYA==}
     dependencies:
-      '@babel/parser': 7.16.4
+      '@babel/parser': 7.21.3
       '@vue/compiler-core': 3.2.47
       '@vue/shared': 3.2.47
       estree-walker: 2.0.2
@@ -4012,6 +4012,7 @@ packages:
   /color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
     engines: {node: '>=7.0.0'}
+    requiresBuild: true
     dependencies:
       color-name: 1.1.4
 
@@ -4020,6 +4021,7 @@ packages:
 
   /color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
+    requiresBuild: true
 
   /colorette@2.0.19:
     resolution: {integrity: sha512-3tlv/dIP7FWvj3BsbHrGLJ6l/oKh1O3TcgBqMn+yyCagOxc23fyzDS6HypQbgxWbkpDnf52p1LuR4eWDQ/K9WQ==}
@@ -5191,6 +5193,7 @@ packages:
 
   /emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
+    requiresBuild: true
 
   /end-of-stream@1.4.4:
     resolution: {integrity: sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q==}
@@ -7229,12 +7232,12 @@ packages:
       test-value: 3.0.0
     dev: true
 
-  /jsdoc-to-markdown@7.0.1:
-    resolution: {integrity: sha512-wN6WAHAPiCyAU7m/+F3FbEEV40CGVWMae49SBPIvfy7kDq/2fBrOw86vdbnLdmjt6u/tHnoxHNrHWYbYFN+4UA==}
-    engines: {node: '>=14'}
+  /jsdoc-to-markdown@7.1.1:
+    resolution: {integrity: sha512-CI86d63xAVNO+ENumWwmJ034lYe5iGU5GwjtTA11EuphP9tpnoi4hrKgR/J8uME0D+o4KUpVfwX1fjZhc8dEtg==}
+    engines: {node: '>=12.17'}
     hasBin: true
     dependencies:
-      array-back: 5.0.0
+      array-back: 6.2.2
       command-line-tool: 0.8.0
       config-master: 3.1.0
       dmd: 6.1.0
