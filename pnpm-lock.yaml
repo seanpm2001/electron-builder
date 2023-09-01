@@ -66,8 +66,8 @@ importers:
         specifier: 27.5.1
         version: 27.5.1
       jsdoc-to-markdown:
-        specifier: 7.0.1
-        version: 7.0.1
+        specifier: 8.0.0
+        version: 8.0.0
       lint-staged:
         specifier: 11.1.2
         version: 11.1.2
@@ -3120,7 +3120,7 @@ packages:
   /@vue/compiler-core@3.2.47:
     resolution: {integrity: sha512-p4D7FDnQb7+YJmO2iPEv0SQNeNzcbHdGByJDsT4lynf63AFkOTFN07HsiRSvjGo0QrxR/o3d0hUyNCUnBU2Tig==}
     dependencies:
-      '@babel/parser': 7.16.4
+      '@babel/parser': 7.21.3
       '@vue/shared': 3.2.47
       estree-walker: 2.0.2
       source-map: 0.6.1
@@ -3158,7 +3158,7 @@ packages:
   /@vue/reactivity-transform@3.2.47:
     resolution: {integrity: sha512-m8lGXw8rdnPVVIdIFhf0LeQ/ixyHkH5plYuS83yop5n7ggVJU+z5v0zecwEnX7fa7HNLBhh2qngJJkxpwEEmYA==}
     dependencies:
-      '@babel/parser': 7.16.4
+      '@babel/parser': 7.21.3
       '@vue/compiler-core': 3.2.47
       '@vue/shared': 3.2.47
       estree-walker: 2.0.2
@@ -4020,6 +4020,7 @@ packages:
 
   /color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
+    requiresBuild: true
 
   /colorette@2.0.19:
     resolution: {integrity: sha512-3tlv/dIP7FWvj3BsbHrGLJ6l/oKh1O3TcgBqMn+yyCagOxc23fyzDS6HypQbgxWbkpDnf52p1LuR4eWDQ/K9WQ==}
@@ -5104,6 +5105,24 @@ packages:
 
   /dmd@6.1.0:
     resolution: {integrity: sha512-0zQIJ873gay1scCTFZvHPWM9mVJBnaylB2NQDI8O9u8O32m00Jb6uxDKexZm8hjTRM7RiWe0FJ32pExHoXdwoQ==}
+    engines: {node: '>=12'}
+    dependencies:
+      array-back: 6.2.2
+      cache-point: 2.0.0
+      common-sequence: 2.0.2
+      file-set: 4.0.2
+      handlebars: 4.7.7
+      marked: 4.2.12
+      object-get: 2.1.1
+      reduce-flatten: 3.0.1
+      reduce-unique: 2.0.1
+      reduce-without: 1.0.1
+      test-value: 3.0.0
+      walk-back: 5.1.0
+    dev: true
+
+  /dmd@6.2.0:
+    resolution: {integrity: sha512-uXWxLF1H7TkUAuoHK59/h/ts5cKavm2LnhrIgJWisip4BVzPoXavlwyoprFFn2CzcahKYgvkfaebS6oxzgflkg==}
     engines: {node: '>=12'}
     dependencies:
       array-back: 6.2.2
@@ -7202,8 +7221,8 @@ packages:
       xmlcreate: 2.0.4
     dev: true
 
-  /jsdoc-api@7.2.0:
-    resolution: {integrity: sha512-93YDnlm/OYTlLOFeNs4qAv0RBCJ0kGj67xQaWy8wrbk97Rw1EySitoOTHsTHXPEs3uyx2IStPKGrbE7LTnZXbA==}
+  /jsdoc-api@8.0.0:
+    resolution: {integrity: sha512-Rnhor0suB1Ds1abjmFkFfKeD+kSMRN9oHMTMZoJVUrmtCGDwXty+sWMA9sa4xbe4UyxuPjhC7tavZ40mDKK6QQ==}
     engines: {node: '>=12.17'}
     dependencies:
       array-back: 6.2.2
@@ -7229,16 +7248,16 @@ packages:
       test-value: 3.0.0
     dev: true
 
-  /jsdoc-to-markdown@7.0.1:
-    resolution: {integrity: sha512-wN6WAHAPiCyAU7m/+F3FbEEV40CGVWMae49SBPIvfy7kDq/2fBrOw86vdbnLdmjt6u/tHnoxHNrHWYbYFN+4UA==}
-    engines: {node: '>=14'}
+  /jsdoc-to-markdown@8.0.0:
+    resolution: {integrity: sha512-2FQvYkg491+FP6s15eFlgSSWs69CvQrpbABGYBtvAvGWy/lWo8IKKToarT283w59rQFrpcjHl3YdhHCa3l7gXg==}
+    engines: {node: '>=12.17'}
     hasBin: true
     dependencies:
-      array-back: 5.0.0
+      array-back: 6.2.2
       command-line-tool: 0.8.0
       config-master: 3.1.0
-      dmd: 6.1.0
-      jsdoc-api: 7.2.0
+      dmd: 6.2.0
+      jsdoc-api: 8.0.0
       jsdoc-parse: 6.2.0
       walk-back: 5.1.0
     dev: true
