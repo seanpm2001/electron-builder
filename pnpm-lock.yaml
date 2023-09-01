@@ -81,8 +81,8 @@ importers:
         specifier: 2.8.0
         version: 2.8.0
       replace-in-file:
-        specifier: 6.2.0
-        version: 6.2.0
+        specifier: 7.0.1
+        version: 7.0.1
       source-map-support:
         specifier: 0.5.21
         version: 0.5.21
@@ -3718,7 +3718,6 @@ packages:
     resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
     dependencies:
       balanced-match: 1.0.2
-    dev: false
 
   /braces@2.3.2:
     resolution: {integrity: sha512-aNdbnj9P8PjdXU4ybaWLK2IF3jc/EoDYbC7AazW6to3TRsfXxscC9UXOB5iDiEQrkyIbWp2SLQda4+QAa7nc3w==}
@@ -5978,6 +5977,17 @@ packages:
       once: 1.4.0
       path-is-absolute: 1.0.1
 
+  /glob@8.1.0:
+    resolution: {integrity: sha512-r8hpEjiQEYlF2QU0df3dS+nxxSIreXQS1qRhMJM0Q5NDdR386C7jb7Hwwod8Fgiuex+k0GFjgft18yvxm5XoCQ==}
+    engines: {node: '>=12'}
+    dependencies:
+      fs.realpath: 1.0.0
+      inflight: 1.0.6
+      inherits: 2.0.4
+      minimatch: 5.1.6
+      once: 1.4.0
+    dev: true
+
   /globals@11.12.0:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
     engines: {node: '>=4'}
@@ -7974,7 +7984,6 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       brace-expansion: 2.0.1
-    dev: false
 
   /minimist-options@4.1.0:
     resolution: {integrity: sha512-Q4r8ghd80yhO/0j1O3B2BjweX3fiHg9cdOwjJd2J76Q135c+NDxGCqdYKQ1SKBuFfgWbAUzBfvYjPUEeNgqN1A==}
@@ -8853,18 +8862,18 @@ packages:
     engines: {node: '>=0.10'}
     dev: true
 
-  /replace-in-file@6.2.0:
-    resolution: {integrity: sha512-Im2AF9G/qgkYneOc9QwWwUS/efyyonTUBvzXS2VXuxPawE5yQIjT/e6x4CTijO0Quq48lfAujuo+S89RR2TP2Q==}
+  /replace-in-file@7.0.1:
+    resolution: {integrity: sha512-KbhgPq04eA+TxXuUxpgWIH9k/TjF+28ofon2PXP7vq6izAILhxOtksCVcLuuQLtyjouBaPdlH6RJYYcSPVxCOA==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
       chalk: 4.1.2
-      glob: 7.2.3
-      yargs: 16.2.0
+      glob: 8.1.0
+      yargs: 17.7.2
     dev: true
 
   /require-directory@2.1.1:
-    resolution: {integrity: sha1-jGStX9MNqxyXbiNE/+f3kqam30I=}
+    resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
     engines: {node: '>=0.10.0'}
 
   /require-main-filename@2.0.0:
@@ -10381,6 +10390,19 @@ packages:
       string-width: 4.2.3
       y18n: 5.0.8
       yargs-parser: 21.1.1
+
+  /yargs@17.7.2:
+    resolution: {integrity: sha512-7dSzzRQ++CKnNI/krKnYRV7JKKPUXMEh61soaHKg9mrWEhzFWhFnxPxGl+69cD1Ou63C13NUPCnmIcrvqCuM6w==}
+    engines: {node: '>=12'}
+    dependencies:
+      cliui: 8.0.1
+      escalade: 3.1.1
+      get-caller-file: 2.0.5
+      require-directory: 2.1.1
+      string-width: 4.2.3
+      y18n: 5.0.8
+      yargs-parser: 21.1.1
+    dev: true
 
   /yauzl@2.10.0:
     resolution: {integrity: sha512-p4a9I6X6nu6IhoGmBqAcbJy1mlC4j27vEPZX9F4L4/vZT3Lyq1VkFHw/V/PUcB9Buo+DG3iHkT0x3Qya58zc3g==}
