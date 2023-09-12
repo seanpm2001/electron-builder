@@ -1,3 +1,12 @@
+# [](https://github.com/electron-userland/electron-builder/compare/v24.6.4...v) (2023-09-12)
+
+
+### Bug Fixes
+
+* **mac:** fix errors using native modules that require rebuild when both mas and mac targets are specified ([#7744](https://github.com/electron-userland/electron-builder/issues/7744)) ([4fc7a3c](https://github.com/electron-userland/electron-builder/commit/4fc7a3c3b857380bcbdd2a10e26989e3b1af50a2))
+
+
+
 # [](https://github.com/electron-userland/electron-builder/compare/v24.6.3...v) (2023-08-19)
 
 
